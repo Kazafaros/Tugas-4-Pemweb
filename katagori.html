@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="katagori.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>All Categories</title>
+    <style> 
+       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    background-color: #FF6500;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    margin-left: -75%;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: #FF6500;
+    color: white;
+    border-radius: 5px;
+}
+
+
+main {
+    padding: 40px 20px;
+}
+
+
+.categories {
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.category-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.category-item h3 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+    color: #FF6500;
+}
+
+.category-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.category-link {
+    color: #FF6500;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.category-link i {
+    margin-left: 5px;
+}
+
+.category-link:hover {
+    color: #333;
+}
+
+
+footer {
+    background-color: #FF6500;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+    </style>    
+</head>
+<body>
+    
+    <header>
+        <h1>Kazafaros</h1>
+    </header>
+
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="informasi.html">Information</a></li>
+            <li><a href="katagori.html">All Cattagories</a></li>
+            <li><a href="other.html">Others</a></li>
+        </ul>
+    </nav>
+
+    
+    <main>
+        <section class="categories">
+            <h2><i class="fas fa-th-list"></i> All Cattagories</h2>
+            <div class="categories-grid">
+                <div class="category-item">
+                    <img src="foto/giftbox.jpg" alt="Gift Set" class="category-image">
+                    <h3>Gift Set</h3>
+                    <p>Paket eksklusif untuk acara istimewa atau perusahaan.</p>
+                </div>
+                <div class="category-item">
+                    <img src="foto/bag.jpg" alt="Bags" class="category-image">
+                    <h3>Bags</h3>
+                    <p>Functional and stylish bags for souvenirs.</p>
+                </div>
+                <div class="category-item">
+                    <img src="foto/pouches.jpg" alt="Pouches" class="category-image">
+                    <h3>Pouches</h3>
+                    <p>Practical and versatile bag for small items.</p>
+                </div>
+                <div class="category-item">
+                    <img src="foto/tumblr.jpg" alt="Tumblrs" class="category-image">
+                    <h3>Tumblrs</h3>
+                    <p>Elegant and eco-friendly tumbler.</p>
+                </div>
+                <div class="category-item">
+                    <img src="foto/totebag.jpg" alt="Tote Bags" class="category-image">
+                    <h3>Tote Bags</h3>
+                    <p>A trendy and environmentally friendly multipurpose bag.</p>
+                </div>
+                <div class="category-item">
+                    <img src="foto/book.jpg" alt="Agendas" class="category-image">
+                    <h3>Book Diary</h3>
+                    <p>Elegant diary for notes and planning.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2024 Kazafaros Souvenir. All rights reserved.</p>
+    </footer>
+</body>
+</html>

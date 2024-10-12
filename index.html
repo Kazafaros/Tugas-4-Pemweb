@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="beranda.css"> -->
+    <title>Home</title>
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    background-color: #FF6500;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 36px;
+    margin-left: 3%;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: #FF6500;
+    color: white;
+    border-radius: 5px;
+}
+
+
+main {
+    padding: 40px 20px;
+}
+
+main h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 i {
+    margin-right: 10px;
+    color: #FF6500;
+}
+
+section p, section ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+section ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section.welcome p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #FF6500;
+    margin-bottom: 15px;
+}
+
+.product-item button {
+    background-color: #FF6500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-item button:hover {
+    background-color: #e55900;
+}
+
+.promo {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.promo h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.promo ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.promo ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #FF6500;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Kazafaros</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="informasi.html">Information</a></li>
+            <li><a href="katagori.html">All Cattagories</a></li>
+            <li><a href="other.html">Others</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <section class="welcome">
+            <h2> Welcome to Kazafaros Souvenir</h2>
+            <p>Enhance Your Corporate Gifting Experience Say your value, we provide the best for you.</p>
+            
+        </section>
+
+        
+        <section class="featured-products">
+            <h2>Best Seller</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="foto/image1.webp" alt="Souvenir 1">
+                    <h3>Souvenir A</h3>
+                    <p>Harga: Rp 20.000</p>
+                    
+                </div>
+                <div class="product-item">
+                    <img src="foto/image2.jpg" alt="Souvenir 2">
+                    <h3>Souvenir B</h3>
+                    <p>Harga: Rp 15.000</p>
+                    
+                </div>
+                <div class="product-item">
+                    <img src="foto/image3.jpg" alt="Souvenir 3">
+                    <h3>Souvenir C</h3>
+                    <p>Harga: Rp 10.000</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <aside class="promo">
+            <h2>Spesial Promo</h2>
+            <ul>
+                <li>10% Off for purchases above Rp.1.000.000</li>
+                <li>Free Shipping for purchases above Rp.500.000</li>
+            </ul>
+        </aside>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kazafaros Souvenir. All rights reserved.</p>
+    </footer>
+</body>
+</html>
